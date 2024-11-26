@@ -12,13 +12,13 @@ dotenv.config({ path: './config.env' });
 
 const app = express();
 
+app.use(express.json());
+
 // Use CORS middleware to enable CORS
 app.use(cors({
     origin: process.env.CLIENT_PORT,
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH'],
 }));
-
-app.use(express.json());
 
 if (process.env.NODE_ENV === 'development') {
     app.use(morgan('dev'));
