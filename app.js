@@ -16,7 +16,7 @@ app.use(express.json());
 
 // Use CORS middleware to enable CORS
 app.use(cors({
-    origin: process.env.CLIENT_PORT,
+    origin: '*',    // Allow all origins
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH'],
 }));
 
