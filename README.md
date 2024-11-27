@@ -80,4 +80,5 @@ src/
 
 <h2 style="margin-bottom: 0.5rem">Contact 💡</h2> 
 For inquiries, please reach out to:
+<br>
 Mohit Jaiswal: mohitjaiswal2883@gmail.com ✉️
